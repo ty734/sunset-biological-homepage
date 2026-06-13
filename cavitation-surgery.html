@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts: preconnect + non-blocking load (replaces slow @import) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Preload LCP hero image -->
+  <link rel="preload" as="image" href="images/cav-hero.webp" fetchpriority="high">
+
+  <title>Cavitation Surgery | Sunset Biological Dentistry | West Hollywood &amp; Beverly Hills</title>
+  <meta name="description" content="Concerned an old extraction site never fully healed? At Sunset Biological Dentistry in West Hollywood &amp; Beverly Hills, Dr. Mersedeh Rajinia uses 3D CBCT imaging to evaluate the jawbone for cavitations and treats them with a gentle, biological approach.">
+  <link rel="canonical" href="https://sunsetbiologicaldentistry.com/cavitation-surgery.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="Sunset Biological Dentistry">
+  <meta name="theme-color" content="#b79a5d">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Sunset Biological Dentistry">
+  <meta property="og:title" content="Cavitation Treatment | Sunset Biological Dentistry">
+  <meta property="og:description" content="Wondering whether an old extraction site fully healed? Biological cavitation evaluation and treatment in West Hollywood &amp; Beverly Hills.">
+  <meta property="og:url" content="https://sunsetbiologicaldentistry.com/cavitation-surgery.html">
+  <meta property="og:image" content="https://sunsetbiologicaldentistry.com/images/cav-hero.webp">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cavitation Treatment | Sunset Biological Dentistry">
+  <meta name="twitter:description" content="Biological cavitation evaluation and treatment in West Hollywood &amp; Beverly Hills with Dr. Mersedeh Rajinia.">
+  <meta name="twitter:image" content="https://sunsetbiologicaldentistry.com/images/cav-hero.webp">
+
+  <!-- Structured data: Breadcrumb + Medical page/procedure -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sunsetbiologicaldentistry.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Cavitation Treatment", "item": "https://sunsetbiologicaldentistry.com/cavitation-surgery.html" }
+        ]
+      },
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://sunsetbiologicaldentistry.com/cavitation-surgery.html#webpage",
+        "url": "https://sunsetbiologicaldentistry.com/cavitation-surgery.html",
+        "name": "Cavitation Treatment | Sunset Biological Dentistry",
+        "description": "Biological cavitation evaluation and treatment in West Hollywood and Beverly Hills. Dr. Mersedeh Rajinia uses 3D CBCT imaging to evaluate the jawbone and treats cavitations with ozone and PRF.",
+        "inLanguage": "en-US",
+        "about": {
+          "@type": "MedicalProcedure",
+          "name": "Cavitation Treatment",
+          "bodyLocation": "Jawbone",
+          "howPerformed": "Evaluation of the jawbone with 3D CBCT imaging; when treatment is needed, carefully cleaning and disinfecting the affected bone and supporting healing with ozone therapy and PRF (platelet-rich fibrin).",
+          "provider": { "@type": "Dentist", "@id": "https://sunsetbiologicaldentistry.com/#practice", "name": "Sunset Biological Dentistry" }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Fonts loaded via <link> in <head> for faster, non-blocking render */
+
+    :root {
+      --gold:       #b79a5d;
+      --gold-dark:  #9a7f48;
+      --black:      #000000;
+      --text:       #121212;
+      --text-light: #666666;
+      --bg-warm-1:  #f9f8f6;
+      --bg-warm-2:  #f1eee8;
+      --white:      #ffffff;
+      --font-serif: 'Playfair Display', serif;
+      --font-sans:  'Lato', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-sans); font-size: 18px; color: var(--text); background: var(--white); line-height: 1.75; }
+    a { text-decoration: none; color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    .container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .section-eyebrow { display: block; font-family: var(--font-sans); font-size:16px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+    .section-divider { display: block; width: 40px; height: 2px; background: var(--gold); margin: 14px 0 22px; }
+    .section-divider.center { margin: 14px auto 22px; }
+
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.75s ease, transform 0.75s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .stagger .reveal:nth-child(1) { transition-delay: 0s; }
+    .stagger .reveal:nth-child(2) { transition-delay: 0.12s; }
+    .stagger .reveal:nth-child(3) { transition-delay: 0.24s; }
+
+    .top-bar { background: var(--black); padding: 9px 0; font-family: var(--font-sans); font-size:16px; font-weight: 400; letter-spacing: 0.5px; color: rgba(255,255,255,0.75); }
+    .top-bar .container { display: flex; justify-content: center; align-items: center; }
+    .top-bar a { color: rgba(255,255,255,0.75); }
+    .top-bar a:hover { color: var(--gold); transition: color 0.2s; }
+
+    .site-header { position: sticky; top: 0; z-index: 999; background: var(--white); border-bottom: 1px solid rgba(0,0,0,0.06); padding: 18px 0; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo-wrap { flex-shrink: 0; }
+    .site-nav { display: flex; align-items: center; gap: 22px; list-style: none; white-space: nowrap; }
+    .site-nav li a { font-family: var(--font-serif); font-size:16px; font-weight: 500; color: var(--text); letter-spacing: 0.3px; transition: color 0.2s; white-space: nowrap; }
+    .site-nav li a:hover { color: var(--gold); }
+    .site-nav .has-dropdown { position: relative; }
+    .site-nav .caret { font-size: 12px; color: var(--gold); }
+    .dropdown { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(6px); margin-top: 12px; background: var(--white); border: 1px solid rgba(0,0,0,0.07); border-radius: 4px; box-shadow: 0 14px 36px rgba(0,0,0,0.12); min-width: 232px; padding: 8px 0; list-style: none; opacity: 0; visibility: hidden; transition: opacity 0.2s ease, transform 0.2s ease; z-index: 1000; }
+    .site-nav .has-dropdown:hover > .dropdown { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+    .site-nav .has-dropdown:hover::before { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 16px; }
+    .dropdown li a { display: block; padding: 11px 24px; font-family: var(--font-serif); font-size: 16px; font-weight: 500; color: var(--text); white-space: nowrap; transition: background 0.15s, color 0.15s; }
+    .dropdown li a:hover { color: var(--gold); background: var(--bg-warm-2); }
+    .header-ctas { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+
+    .btn-outline { font-family: var(--font-sans); font-size:16px; font-weight: 600; letter-spacing: 0.4px; padding: 9px 18px; border: 1.5px solid var(--text); color: var(--text); border-radius: 3px; transition: all 0.2s; white-space: nowrap; }
+    .btn-outline:hover { background: var(--text); color: var(--white); }
+    .btn-primary { font-family: var(--font-sans); font-size:16px; font-weight: 600; letter-spacing: 0.4px; padding: 10px 20px; background: var(--black); color: var(--white); border-radius: 3px; border: 1.5px solid var(--black); transition: all 0.2s; white-space: nowrap; }
+    .btn-primary:hover { background: #2a2a2a; border-color: #2a2a2a; }
+    .btn-gold { font-family: var(--font-sans); font-size:16px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding: 14px 32px; background: var(--gold); color: var(--white); border-radius: 2px; border: none; transition: background 0.2s; display: inline-block; cursor: pointer; }
+    .btn-gold:hover { background: var(--gold-dark); }
+    .btn-ghost { font-family: var(--font-sans); font-size:16px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding: 13px 30px; background: transparent; color: var(--gold-dark); border: 1.5px solid var(--gold); border-radius: 2px; transition: all 0.2s; display: inline-block; }
+    .btn-ghost:hover { background: var(--gold); color: #fff; }
+
+    .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-toggle span { display: block; width: 26px; height: 2px; background: var(--text); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* HERO (contained, text left / image right) */
+    .hero { background: #f1eee8; padding: 68px 0; }
+    .hero-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; background: transparent; }
+    .hero-content { display: block; padding: 0; background: transparent; }
+    .hero-content .container { width: 100%; max-width: 100%; padding: 0; display: block; }
+    .hero-text { width: 100%; max-width: 560px; }
+    .hero-photo { background: transparent; overflow: hidden; position: relative; border-radius: 4px; box-shadow: 0 14px 40px rgba(0,0,0,0.08); }
+    .hero-photo img { width: 100%; height: auto; max-width: none; object-fit: cover; object-position: center; display: block; }
+    .hero-eyebrow { display: block; font-family: var(--font-sans); font-size:16px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 18px; }
+    .hero-eyebrow::after { content:''; display:block; width:54px; height:2px; background:var(--gold); margin-top:16px; }
+    .hero-h1 { font-family: var(--font-serif); font-size: 3rem; font-weight: 700; line-height: 1.16; color: #1f1b16; margin-bottom: 22px; }
+    .hero-h1 em { font-style: italic; color: var(--gold); }
+    .hero-sub { font-family: var(--font-sans); font-size: 18px; font-weight: 300; line-height: 1.8; color: #5b554c; max-width: 480px; margin-bottom: 34px; }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero .btn-gold { background: #141414; color: #fff; }
+    .hero .btn-gold:hover { background: #2c2c2c; }
+
+    .zigzag { padding: 90px 0; }
+    .zigzag.bg-warm { background: var(--bg-warm-1); }
+    .zigzag-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .zigzag-inner.reverse { direction: rtl; }
+    .zigzag-inner.reverse > * { direction: ltr; }
+    .zigzag-text h2 { font-family: var(--font-serif); font-size: clamp(1.8rem, 2.5vw, 2.4rem); font-weight: 700; line-height: 1.3; color: var(--text); margin-bottom: 0; }
+    .zigzag-text p { font-size: 17.5px; line-height: 1.85; color: var(--text-light); margin-bottom: 16px; }
+    .zigzag-text p:last-of-type { margin-bottom: 28px; }
+    .text-link { font-family: var(--font-sans); font-size:16px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); display: inline-flex; align-items: center; gap: 8px; transition: gap 0.2s; }
+    .text-link:hover { gap: 14px; }
+    .text-link::after { content: '→'; }
+    .media-caption { display: block; font-family: var(--font-serif); font-style: italic; font-size: 16px; color: var(--gold-dark); margin-bottom: 12px; letter-spacing: 0.3px; }
+    .zigzag-image img { width: 100%; height: auto; border-radius: 4px; display: block; box-shadow: 0 14px 40px rgba(0,0,0,0.08); }
+
+    .cta-band { padding: 70px 0; text-align: center; background: var(--black); }
+    .cta-band h2 { font-family: var(--font-serif); font-size: clamp(1.6rem, 2.6vw, 2.2rem); font-weight: 700; color: var(--white); max-width: 680px; margin: 0 auto 22px; line-height: 1.3; }
+    .cta-band .btn-gold { background: var(--gold); color: #fff; }
+    .cta-band .btn-gold:hover { background: var(--gold-dark); }
+
+    .schedule-section { background: var(--bg-warm-2); padding: 90px 0; }
+    .schedule-header { text-align: center; margin-bottom: 52px; }
+    .schedule-header h2 { font-family: var(--font-serif); font-size: clamp(1.9rem, 2.8vw, 2.4rem); font-weight: 700; color: var(--text); }
+    .schedule-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+    .schedule-copy p { font-size: 17.5px; line-height: 1.85; color: var(--text-light); margin-bottom: 18px; }
+    .schedule-phone { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: var(--text); margin: 6px 0 4px; display: inline-block; }
+    .schedule-phone:hover { color: var(--gold-dark); }
+    .schedule-copy .small { font-size: 16px; color: var(--text-light); }
+
+    .review-callout { background: var(--white); border-top: 3px solid var(--gold); border-radius: 4px; padding: 30px 28px; margin-top: 30px; }
+    .review-callout .stars { color: var(--gold); letter-spacing: 2px; font-size: 16px; margin-bottom: 14px; }
+    .review-callout blockquote { font-family: var(--font-serif); font-style: italic; font-size: 17px; line-height: 1.75; color: var(--text); margin-bottom: 18px; }
+    .review-callout .author { font-family: var(--font-sans); font-size: 16px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); }
+
+    .lead-form { background: var(--white); border-radius: 6px; padding: 34px; box-shadow: 0 16px 48px rgba(0,0,0,0.07); }
+    .lead-form h3 { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .lead-form .form-intro { font-size: 16px; color: var(--text-light); margin-bottom: 22px; }
+    .lead-form .field { margin-bottom: 16px; }
+    .lead-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .lead-form label { display: block; font-family: var(--font-sans); font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+    .lead-form input, .lead-form textarea { width: 100%; padding: 12px 14px; border: 1px solid #d8d0c2; border-radius: 4px; font-family: var(--font-sans); font-size: 16px; color: var(--text); background: #fdfcfa; transition: border-color 0.2s; }
+    .lead-form input:focus, .lead-form textarea:focus { outline: none; border-color: var(--gold); }
+    .lead-form textarea { resize: vertical; min-height: 92px; }
+    .lead-form button { width: 100%; margin-top: 6px; }
+    .lead-form .privacy-note { font-size: 13px; color: #9a9385; margin-top: 14px; text-align: center; }
+
+    .site-footer { background: var(--black); padding: 36px 0; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .footer-copy { font-size:16px; color: rgba(255,255,255,0.4); letter-spacing: 0.3px; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size:16px; color: rgba(255,255,255,0.4); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+
+    @media (max-width: 1024px) {
+      .zigzag-inner { gap: 40px; }
+      .hero-inner { grid-template-columns: 54% 46%; min-height: 80vh; }
+      .hero-content { padding: 60px 32px; }
+      .hero-h1 { font-size: 2.5rem; }
+    }
+    @media (max-width: 768px) {
+      .top-bar .container { flex-direction: column; gap: 4px; text-align: center; }
+      .header-inner { flex-direction: column; align-items: center; gap: 14px; position: relative; }
+      .nav-toggle { display: flex; position: absolute; top: 34px; right: 4px; transform: translateY(-50%); }
+      .site-nav { display: none; }
+      .site-nav.open { display: flex; flex-direction: column; align-items: center; gap: 16px; width: 100%; padding-top: 6px; }
+      .site-nav .has-dropdown { width: 100%; text-align: center; }
+      .dropdown { position: static; transform: none; opacity: 1; visibility: visible; margin-top: 8px; box-shadow: none; border: none; background: transparent; min-width: 0; padding: 0; }
+      .site-nav .has-dropdown:hover::before { display: none; }
+      .dropdown li a { padding: 8px 0; color: var(--text-light); font-size: 16px; }
+      .header-ctas { justify-content: center; }
+      .header-ctas .btn-outline { display: none; }
+      .hero { padding: 48px 0; }
+      .hero-inner { grid-template-columns: 1fr; grid-template-rows: auto auto; gap: 28px; min-height: auto; }
+      .hero-content { order: 1; padding: 0; }
+      .hero-photo { order: 2; height: auto; }
+      .hero-h1 { font-size: 2.1rem; line-height: 1.2; }
+      .hero-sub { max-width: 520px; margin-left: auto; margin-right: auto; }
+      .hero-text { width: 100%; max-width: 520px; margin: 0 auto; text-align: center; }
+      .hero-eyebrow::after { margin-left: auto; margin-right: auto; }
+      .hero-ctas { justify-content: center; }
+      .zigzag-inner, .zigzag-inner.reverse { grid-template-columns: 1fr; direction: ltr; gap: 32px; }
+      .zigzag-inner.reverse > * { direction: ltr; }
+      .schedule-grid { grid-template-columns: 1fr; gap: 36px; }
+      .lead-form .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <span>9201 Sunset Blvd #418, West Hollywood, CA 90069</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-wrap" aria-label="Sunset Biological Dentistry">
+        <img src="images/logo-horizontal.png" alt="Sunset Biological Dentistry" style="height:68px; width:auto; display:block;">
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav">
+          <li><a href="index.html#about">About Dr. Mersedeh</a></li>
+          <li><a href="index.html">Biological Dentistry</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#services">Services <span class="caret">&#9662;</span></a>
+            <ul class="dropdown">
+              <li><a href="root-canal-prevention.html">Root Canal Prevention</a></li>
+              <li><a href="cavitation-surgery.html">Cavitation Surgery</a></li>
+            </ul>
+          </li>
+          <li><a href="#schedule">New Patients</a></li>
+          <li><a href="#schedule">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-ctas">
+        <a href="tel:3102751399" class="btn-outline">Call (310) 275-1399</a>
+        <a href="#schedule" class="btn-primary">Book Consultation</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-text">
+            <span class="hero-eyebrow reveal">Biological Cavitation Treatment &middot; West Hollywood &amp; Beverly Hills</span>
+            <h1 class="hero-h1 reveal">Healed on the Surface &mdash; But Not <em>Underneath?</em></h1>
+            <p class="hero-sub reveal">After a tooth is removed, most extraction sites heal completely. Occasionally, an area of the jawbone doesn&rsquo;t fully heal, leaving behind a pocket of unhealthy bone known as a cavitation. These areas tend to be quiet &mdash; easy to miss and rarely painful &mdash; which is exactly why they&rsquo;re worth a closer look.</p>
+            <div class="hero-ctas reveal">
+              <a href="#schedule" class="btn-gold">Book Your Evaluation</a>
+              <a href="tel:3102751399" class="btn-ghost">Call (310) 275-1399</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="images/cav-hero.webp" alt="Cavitation in the jawbone illustrated at Sunset Biological Dentistry" width="1300" height="866" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: HOW WE IDENTIFY -->
+  <section class="zigzag" id="identify">
+    <div class="container">
+      <div class="zigzag-inner">
+        <div class="zigzag-text reveal">
+          <span class="section-eyebrow">A Closer Look First</span>
+          <h2>How We Identify a Hidden Cavitation</h2>
+          <span class="section-divider"></span>
+          <p>Cavitations sit beneath the surface of the jawbone, which makes them difficult to see on a standard dental X-ray. Finding them takes the right imaging &mdash; and the experience to read it carefully.</p>
+          <p>At Sunset Biological Dentistry, Dr. Mersedeh uses 3D CBCT imaging to evaluate the bone in detail and identify areas that may not have healed properly after a tooth extraction. Because the signs can be subtle, an accurate read depends on both the technology and a trained eye.</p>
+          <p>During your new patient exam, we&rsquo;ll review the jawbone closely &mdash; particularly around sites where teeth were removed &mdash; and determine whether any signs of a cavitation are present.</p>
+          <a href="#schedule" class="text-link">Have your jawbone evaluated</a>
+        </div>
+        <div class="zigzag-image reveal">
+          <span class="media-caption">Dr. Mersedeh reviewing a 3D CBCT scan</span>
+          <img src="images/rc-cbct.jpg" alt="Dr. Mersedeh Rajinia reviewing a 3D cone beam CT scan" loading="lazy" decoding="async" width="1200" height="800">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: WHAT IS A CAVITATION -->
+  <section class="zigzag bg-warm">
+    <div class="container">
+      <div class="zigzag-inner reverse">
+        <div class="zigzag-text reveal">
+          <span class="section-eyebrow">What Is a Cavitation?</span>
+          <h2>Why a Cavitation Is Worth Evaluating</h2>
+          <span class="section-divider"></span>
+          <p>A cavitation forms when an area of the jawbone doesn&rsquo;t fully heal after a tooth is removed, leaving behind damaged or unhealthy bone tissue where solid bone should be.</p>
+          <p>Because the area sits below the surface, it can go unnoticed and often doesn&rsquo;t produce obvious symptoms like pain or swelling. That&rsquo;s why a thoughtful evaluation matters &mdash; especially in spots where teeth have been extracted.</p>
+          <p>Looking at the area gives you a clearer understanding of what&rsquo;s happening in the bone and whether any treatment may be helpful, so you can make an informed decision rather than wonder.</p>
+        </div>
+        <div class="zigzag-image reveal">
+          <span class="media-caption">A cavitation in the jawbone, shown beside healthy teeth</span>
+          <img src="images/cav-diagram.jpg" alt="Anatomical diagram of a cavitation in the lower jawbone" loading="lazy" decoding="async" width="1200" height="800">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: HOW WE TREAT -->
+  <section class="zigzag">
+    <div class="container">
+      <div class="zigzag-inner">
+        <div class="zigzag-text reveal">
+          <span class="section-eyebrow">A Gentle, Biological Approach</span>
+          <h2>How Cavitations Are Treated at Sunset</h2>
+          <span class="section-divider"></span>
+          <p>Treating a cavitation means carefully cleaning out the unhealthy bone and supporting the area so it can heal the way it should. Because the site is within the jawbone, it&rsquo;s a precise, specialized procedure that calls for both experience and a gentle hand.</p>
+          <p>Dr. Mersedeh thoroughly cleans and disinfects the area, then draws on biological protocols &mdash; including ozone to address bacteria without harsh chemicals, and PRF (platelet-rich fibrin made from your own blood) &mdash; to support healing and encourage healthy bone regeneration.</p>
+          <p>Every step is chosen with one goal in mind: restoring the health of the jawbone and supporting your long-term oral and overall wellbeing &mdash; comfortably, and at your pace.</p>
