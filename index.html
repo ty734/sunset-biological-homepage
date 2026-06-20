@@ -46,7 +46,7 @@
         "name": "Sunset Biological Dentistry",
         "url": "https://sunsetbiologicaldentistry.com/",
         "image": "https://sunsetbiologicaldentistry.com/images/heroedit.webp",
-        "logo": "https://sunsetbiologicaldentistry.com/images/logo-horizontal.png",
+        "logo": "https://sunsetbiologicaldentistry.com/images/logo-horizontal.webp",
         "telephone": "+1-310-275-1399",
         "priceRange": "$$$",
         "currenciesAccepted": "USD",
@@ -68,9 +68,15 @@
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-            "opens": "08:00",
-            "closes": "17:00"
+            "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday"],
+            "opens": "00:00",
+            "closes": "00:00"
           }
         ],
         "founder": {
@@ -225,7 +231,6 @@
     /* Logo */
     .logo-wrap {
       flex-shrink: 0;
-      /* SWAP: Replace this CSS logo with <img src="logo-horizontal.png" alt="Sunset Biological Dentistry" height="52"> */
     }
     .logo-css {
       display: flex;
@@ -859,32 +864,35 @@
     /* ============================================================
        FOOTER
     ============================================================ */
-    .site-footer {
-      background: var(--black);
-      padding: 36px 0;
+    .site-footer { background: #141414; }
+    .footer-top { max-width: 1240px; margin: 0 auto; padding: 58px 24px 44px; display: grid; grid-template-columns: 1.7fr 1fr 1fr; gap: 40px; }
+    .footer-brand .footer-logo { display: inline-block; }
+    .footer-brand .footer-logo img { height: 104px; width: auto; display: block; }
+    .footer-tagline { margin: 20px 0 0; font-size: 15px; line-height: 1.8; color: rgba(255,255,255,0.55); max-width: 340px; }
+    .footer-social { display: flex; gap: 12px; margin-top: 22px; }
+    .footer-social a { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.25); border-radius: 50%; color: rgba(255,255,255,0.7); transition: all 0.2s; }
+    .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
+    .footer-social svg { width: 17px; height: 17px; fill: currentColor; }
+    .footer-h { font-family: var(--font-sans); font-size: 13px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .footer-col p { font-size: 15px; line-height: 1.8; color: rgba(255,255,255,0.6); margin-bottom: 12px; }
+    .footer-col a { color: rgba(255,255,255,0.6); transition: color 0.2s; }
+    .footer-col a:hover { color: var(--gold); }
+    .footer-contact { display: inline-block; margin-top: 2px; font-family: var(--font-sans); font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold) !important; }
+    .footer-contact:hover { color: var(--gold-dark) !important; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); }
+    .footer-bottom-inner { max-width: 1240px; margin: 0 auto; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-copy { font-size: 14px; color: rgba(255,255,255,0.4); letter-spacing: 0.3px; }
+    .footer-legal { display: flex; align-items: center; gap: 14px; }
+    .footer-legal a { font-size: 14px; color: rgba(255,255,255,0.45); transition: color 0.2s; }
+    .footer-legal a:hover { color: var(--gold); }
+    .footer-legal .sep { color: rgba(255,255,255,0.25); }
+    @media (max-width: 768px) {
+      .footer-top { grid-template-columns: 1fr; gap: 30px; padding: 44px 24px 32px; text-align: center; }
+      .footer-brand .footer-logo img { margin: 0 auto; }
+      .footer-tagline { margin-left: auto; margin-right: auto; }
+      .footer-social { justify-content: center; }
+      .footer-bottom-inner { flex-direction: column; text-align: center; }
     }
-    .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-    .footer-copy {
-      font-size:16px;
-      color: rgba(255,255,255,0.4);
-      letter-spacing: 0.3px;
-    }
-    .footer-links {
-      display: flex;
-      gap: 24px;
-    }
-    .footer-links a {
-      font-size:16px;
-      color: rgba(255,255,255,0.4);
-      transition: color 0.2s;
-    }
-    .footer-links a:hover { color: var(--gold); }
 
     /* ============================================================
        RESPONSIVE
@@ -1006,39 +1014,51 @@
   <!-- ============================================================
        2. STICKY HEADER
   ============================================================ -->
+  <!-- HEADER:START - universal region from partials/header.html. Edit the partial then run build.py. Do not edit between markers. -->
   <header class="site-header">
     <div class="container header-inner">
-
-      <a href="/" class="logo-wrap" aria-label="Sunset Biological Dentistry">
-        <img src="images/logo-horizontal.png" alt="Sunset Biological Dentistry" style="height:68px; width:auto; display:block;">
+      <a href="index.html" class="logo-wrap" aria-label="Sunset Biological Dentistry">
+        <img src="images/logo-horizontal.webp" alt="Sunset Biological Dentistry" style="height:68px; width:auto; display:block;">
       </a>
-
       <nav aria-label="Main navigation">
         <ul class="site-nav">
-          <li><a href="#about">About Dr. Mersedeh</a></li>
-          <li><a href="#about">Biological Dentistry</a></li>
           <li class="has-dropdown">
-            <a href="#services">Services <span class="caret">&#9662;</span></a>
+            <a href="index.html#services">Services <span class="caret">&#9662;</span></a>
             <ul class="dropdown">
+              <li><a href="holistic-dentistry.html">Holistic Dentistry</a></li>
+              <li><a href="biological-hygiene.html">Biological Hygiene &amp; Prevention</a></li>
+              <li><a href="safe-mercury-removal.html">Safe Mercury Removal</a></li>
+              <li><a href="ozone-therapy.html">Ozone Therapy</a></li>
               <li><a href="root-canal-prevention.html">Root Canal Prevention</a></li>
+              <li><a href="biomimetic-restorations.html">Biomimetic Restorations</a></li>
+              <li><a href="cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
+              <li><a href="ceramic-implants.html">Ceramic Implants</a></li>
+              <li><a href="all-on-x.html">All-on-X</a></li>
               <li><a href="cavitation-surgery.html">Cavitation Surgery</a></li>
+              <li><a href="oral-surgery.html">Oral Surgery</a></li>
             </ul>
           </li>
-          <li><a href="#services">New Patients</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="has-dropdown">
+            <a href="why-choose-sunset.html">Why Sunset Biological? <span class="caret">&#9662;</span></a>
+            <ul class="dropdown">
+              <li><a href="why-choose-sunset.html">Why Sunset</a></li>
+              <li><a href="meet-dr-mersedeh.html">Meet Dr. Mersedeh</a></li>
+            </ul>
+          </li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="blog.html">Blogs &amp; Resources</a></li>
         </ul>
       </nav>
-
       <div class="header-ctas">
         <a href="tel:3102751399" class="btn-outline">Call (310) 275-1399</a>
-        <a href="#" class="btn-primary">Book Consultation</a>
+        <a href="schedule.html" class="btn-primary">Book Consultation</a>
       </div>
-
       <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
+<!-- HEADER:END -->
 
   <main>
 
@@ -1054,7 +1074,7 @@
             <h1 class="hero-h1 reveal">Where Whole-Body<br>Wellness Begins<br><em>With Your Mouth</em></h1>
             <p class="hero-sub reveal">A biological approach to dentistry that looks beyond symptoms&mdash;addressing the root cause for a healthier mouth and a healthier you.</p>
             <div class="hero-ctas reveal">
-              <a href="#" class="btn-gold">Book Your Consultation</a>
+              <a href="schedule.html" class="btn-gold">Book Your Consultation</a>
               <a href="#about" class="btn-ghost">Learn Our Approach</a>
             </div>
           </div>
@@ -1110,7 +1130,7 @@
           <p>Most dental visits focus on the problem in front of them. Dr. Mersedeh looks further. At Sunset Biological Dentistry, every recommendation is filtered through one question: what does this mean for the rest of your body?</p>
           <p>USC-trained and honored in the top 10% of her graduating class, Dr. Mersedeh brings rigorous clinical precision to a deeply personal practice. She believes the mouth is a window into systemic health -- and she has built her entire practice around that belief.</p>
           <p>She speaks English and Farsi, and takes genuine time with every patient. No rush. No judgment. No unnecessary procedures.</p>
-          <a href="#" class="text-link">Learn more about Dr. Mersedeh</a>
+          <a href="meet-dr-mersedeh.html" class="text-link">Learn more about Dr. Mersedeh</a>
         </div>
         <div class="zigzag-image reveal">
           <img src="images/dr-mersedeh-newpatient-exam.webp" alt="Dr. Mersedeh Rajinia performing a new patient exam" loading="lazy" decoding="async" style="width:100%; height:480px; object-fit:cover; object-position:center center; border-radius:4px; display:block;">
@@ -1185,7 +1205,7 @@
       <p>New patient consultations available in West Hollywood &amp; Beverly Hills.<br>
         <span>English &amp; Farsi</span>
       </p>
-      <a href="#" class="btn-gold">Book My New Patient Consultation →</a>
+      <a href="schedule.html" class="btn-gold">Book My New Patient Consultation →</a>
     </div>
   </section>
 
@@ -1207,7 +1227,7 @@
             <h3>Holistic / Biological Dentistry</h3>
             <div class="service-card-divider"></div>
             <p>A whole-body approach that treats the mouth as part of an interconnected system -- from the oral microbiome to airway health and beyond.</p>
-            <a href="#" class="card-link">Learn More</a>
+            <a href="holistic-dentistry.html" class="card-link">Learn More</a>
           </div>
         </div>
 
@@ -1217,7 +1237,7 @@
             <h3>Amalgam (Mercury) Removal</h3>
             <div class="service-card-divider"></div>
             <p>Safe removal of mercury amalgam fillings using the IAOMT SMART protocol -- protecting you, our team, and the environment.</p>
-            <a href="#" class="card-link">Learn More</a>
+            <a href="safe-mercury-removal.html" class="card-link">Learn More</a>
           </div>
         </div>
 
@@ -1227,7 +1247,7 @@
             <h3>Root Canal Prevention</h3>
             <div class="service-card-divider"></div>
             <p>Biomimetic techniques and ozone therapy to save teeth that might otherwise require root canals -- treating the root cause first.</p>
-            <a href="#" class="card-link">Learn More</a>
+            <a href="root-canal-prevention.html" class="card-link">Learn More</a>
           </div>
         </div>
 
@@ -1237,7 +1257,7 @@
             <h3>Ceramic / Zirconia Implants</h3>
             <div class="service-card-divider"></div>
             <p>Metal-free tooth replacement using zirconia implants -- biocompatible, non-corrosive, and beautifully natural-looking.</p>
-            <a href="#" class="card-link">Learn More</a>
+            <a href="ceramic-implants.html" class="card-link">Learn More</a>
           </div>
         </div>
 
@@ -1247,7 +1267,7 @@
             <h3>All-on-X Full-Arch Implants</h3>
             <div class="service-card-divider"></div>
             <p>A complete fixed set of teeth supported by just a few precisely placed implants -- restoring a full arch with a stable, natural-looking, metal-free solution.</p>
-            <a href="#" class="card-link">Learn More</a>
+            <a href="all-on-x.html" class="card-link">Learn More</a>
           </div>
         </div>
 
@@ -1257,7 +1277,7 @@
             <h3>Cavitation Surgery</h3>
             <div class="service-card-divider"></div>
             <p>Diagnosis and treatment of jaw cavitations -- areas of necrotic bone associated with chronic pain and systemic health issues.</p>
-            <a href="#" class="card-link">Learn More</a>
+            <a href="cavitation-surgery.html" class="card-link">Learn More</a>
           </div>
         </div>
 
@@ -1267,7 +1287,7 @@
             <h3>Ozone Therapy</h3>
             <div class="service-card-divider"></div>
             <p>Medical-grade ozone applied to eliminate bacteria and support healing -- antibiotic-free, minimally invasive, and highly effective.</p>
-            <a href="#" class="card-link">Learn More</a>
+            <a href="ozone-therapy.html" class="card-link">Learn More</a>
           </div>
         </div>
 
@@ -1277,7 +1297,7 @@
             <h3>Extraction + PRF Therapy</h3>
             <div class="service-card-divider"></div>
             <p>Extractions combined with platelet-rich fibrin from your own blood -- dramatically faster healing and superior bone regeneration.</p>
-            <a href="#" class="card-link">Learn More</a>
+            <a href="oral-surgery.html" class="card-link">Learn More</a>
           </div>
         </div>
 
@@ -1287,7 +1307,7 @@
             <h3>Veneers &amp; Full Mouth Rehabilitation</h3>
             <div class="service-card-divider"></div>
             <p>Cosmetic artistry in alignment with biology -- natural, luminous results using biocompatible materials that preserve healthy structure.</p>
-            <a href="#" class="card-link">Learn More</a>
+            <a href="cosmetic-dentistry.html" class="card-link">Learn More</a>
           </div>
         </div>
 
@@ -1359,8 +1379,8 @@
         </div>
         <div class="review-card reveal">
           <div class="review-stars">★★★★★</div>
-          <p class="review-quote">"Carmelita, Martha, and Dr. Rajinia were all amazing!"</p>
-          <span class="review-author">— Elizabeth Jane</span>
+          <p class="review-quote">"Dr. Rajinia is awesome — and she's making this office even better. No more messy molds for Invisalign, just digital scans. I look forward to being a patient for many more years. 10/10 staff."</p>
+          <span class="review-author">— Jessica VanderYacht</span>
         </div>
         <div class="review-card reveal">
           <div class="review-stars">★★★★★</div>
@@ -1375,7 +1395,7 @@
             <div style="font-family:var(--font-sans);font-size:16px;font-weight:700;color:var(--text);">Excellent on Google</div>
             <div style="font-size:16px;color:var(--text-light);">4.7 ★ &nbsp;·&nbsp; 58 Reviews</div>
           </div>
-          <a href="https://g.co/kgs/" target="_blank" style="font-family:var(--font-sans);font-size:16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-left:8px;">See All Reviews →</a>
+          <a href="reviews.html" style="font-family:var(--font-sans);font-size:16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-left:8px;">See All Reviews →</a>
         </div>
       </div>
     </div>
@@ -1388,7 +1408,7 @@
     <div class="container">
       <div class="address-grid">
         <div class="address-col reveal">
-          <img src="images/logo-horizontal.png" alt="Sunset Biological Dentistry" style="height:52px;width:auto;display:block;margin-bottom:22px;">
+          <img src="images/logo-horizontal.webp" alt="Sunset Biological Dentistry" style="height:52px;width:auto;display:block;margin-bottom:22px;">
           <h4>Address</h4>
           <address>
             9201 Sunset Blvd #418<br>
@@ -1404,11 +1424,11 @@
         <div class="address-col reveal">
           <h4>Office Hours</h4>
           <table class="hours-table">
-            <tr><td>Monday</td><td>8:00 AM – 5:00 PM</td></tr>
-            <tr><td>Tuesday</td><td>8:00 AM – 5:00 PM</td></tr>
-            <tr><td>Wednesday</td><td>8:00 AM – 5:00 PM</td></tr>
-            <tr><td>Thursday</td><td>8:00 AM – 5:00 PM</td></tr>
-            <tr><td>Friday</td><td>Closed</td></tr>
+            <tr><td>Monday</td><td>By Appointment Only</td></tr>
+            <tr><td>Tuesday</td><td>By Appointment Only</td></tr>
+            <tr><td>Wednesday</td><td>9:00 AM – 6:00 PM</td></tr>
+            <tr><td>Thursday</td><td>9:00 AM – 6:00 PM</td></tr>
+            <tr><td>Friday</td><td>9:00 AM – 6:00 PM</td></tr>
           </table>
           <br>
           <a href="https://www.google.com/maps/dir/?api=1&destination=9201+Sunset+Blvd+%23418,+West+Hollywood,+CA+90069" target="_blank" class="directions-link">Get Directions</a>
@@ -1434,17 +1454,42 @@
   <!-- ============================================================
        13. FOOTER
   ============================================================ -->
+  <!-- FOOTER:START - universal region from partials/footer.html. Edit the partial then run build.py. Do not edit between markers. -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <span class="footer-copy">&copy; <span id="footer-year"></span> Sunset Biological Dentistry. All rights reserved.</span>
-      <div class="footer-links">
-        <a href="root-canal-prevention.html">Root Canal Prevention</a>
-        <a href="cavitation-surgery.html">Cavitation Surgery</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Accessibility</a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="Sunset Biological Dentistry">
+          <img src="images/logo-vertical-white-gold.png" alt="Sunset Biological Dentistry" width="234" height="104">
+        </a>
+        <p class="footer-tagline">Holistic, biological dentistry in West Hollywood &amp; Beverly Hills. Mercury-safe, metal-free, whole-body care led by Dr. Mersedeh Rajinia.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.9 3.78-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34V22c4.78-.79 8.43-4.94 8.43-9.94Z"/></svg></a>
+          <a href="#" aria-label="Instagram" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.24-1.77-.41-2.19-.21-.55-.47-.94-.88-1.35-.41-.41-.8-.67-1.35-.88-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07Zm0 2.76a5.3 5.3 0 1 0 0 10.6 5.3 5.3 0 0 0 0-10.6Zm0 8.74a3.44 3.44 0 1 1 0-6.88 3.44 3.44 0 0 1 0 6.88Zm6.74-8.94a1.24 1.24 0 1 1-2.48 0 1.24 1.24 0 0 1 2.48 0Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-h">Visit Us</h4>
+        <p>9201 Sunset Blvd #418<br>West Hollywood, CA 90069</p>
+        <p><a href="tel:3102751399">(310) 275-1399</a></p>
+        <a href="contact-us.html" class="footer-contact">Contact Us &rarr;</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-h">Office Hours</h4>
+        <p>Mon &amp; Tue: By Appointment Only<br>Wed &ndash; Fri: 9:00 AM &ndash; 6:00 PM<br>Sat &amp; Sun: Closed</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <span class="footer-copy">&copy; <span id="footer-year"></span> Sunset Biological Dentistry. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <span class="sep">&middot;</span>
+          <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+        </div>
       </div>
     </div>
   </footer>
+<!-- FOOTER:END -->
 
   <!-- ============================================================
        SCROLL ANIMATION SCRIPT
